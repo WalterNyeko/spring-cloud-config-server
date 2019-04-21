@@ -1,0 +1,13 @@
+---
+server:
+  port: 8888
+spring.application.name: sacco
+ 
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/WalterNyeko/spring-cloud-microservice-configurations
+          search-paths:
+            - 'sacco*'
